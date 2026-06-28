@@ -42,13 +42,36 @@ class FakeRelationshipLLM:
         )
 
 
+class FakeEventLLM:
+
+    def generate(self, prompt: str):
+
+        return json.dumps(
+            {
+                "events": [
+                    {
+                        "title": "Generator Delay",
+                        "event_type": "delay",
+                        "description": "Generator delayed by 9 days.",
+                        "affected_entity_name": "Generator G-12",
+                        "severity": "high",
+                    }
+                ]
+            }
+        )
+
+
 def test_analysis_pipeline():
 
     pipeline = AnalysisPipeline()
 
     pipeline.entity_extractor.client = FakeEntityLLM()
 
-    pipeline.relationship_extractor.client = FakeRelationshipLLM()
+    pipeline.relationship_extractor.client = (
+        FakeRelationshipLLM()
+    )
+
+    pipeline.event_extractor.client = FakeEventLLM()
 
     result = pipeline.analyze(
         "demo_data/sample_document.txt"
@@ -58,6 +81,20 @@ def test_analysis_pipeline():
 
     assert len(result.relationships) == 1
 
-    assert result.project.metadata["graph"].number_of_nodes() == 2
+    assert len(result.events) == 1
 
-    assert result.project.metadata["graph"].number_of_edges() == 1
+    assert (
+        result.events[0].title
+        == "Generator Delay"
+    )
+
+    graph = result.project.metadata["graph"]
+
+    assert graph.number_of_nodes() == 2
+
+    assert graph.number_of_edges() == 1
+
+    assert (
+        len(result.project.metadata["events"])
+        == 1
+    )

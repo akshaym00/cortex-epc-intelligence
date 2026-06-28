@@ -52,6 +52,13 @@ class ExtractionPrompts:
                 ]
             }}
 
+            Rules:
+
+            - Return ONLY JSON.
+            - Do not include markdown.
+            - Do not explain your answer.
+            - Do not invent entities.
+
             Document:
 
             {document}
@@ -64,7 +71,7 @@ class ExtractionPrompts:
             f"""
             You are an EPC project knowledge extraction assistant.
 
-            Extract every relationship that exists between project entities.
+            Extract every relationship between the entities found in the document.
 
             Valid relationship types:
 
@@ -98,6 +105,14 @@ class ExtractionPrompts:
                 ]
             }}
 
+            Rules:
+
+            - Return ONLY JSON.
+            - Do not include markdown.
+            - Do not explain your answer.
+            - Use only relationship types listed above.
+            - Do not invent relationships.
+
             Document:
 
             {document}
@@ -110,7 +125,20 @@ class ExtractionPrompts:
             f"""
             You are an EPC project event extraction assistant.
 
-            Extract every project event.
+            Detect every project event described in the document.
+
+            Typical event types include:
+
+            - delay
+            - risk
+            - issue
+            - approval
+            - completion
+            - inspection
+            - delivery
+            - installation
+            - failure
+            - change
 
             Return ONLY valid JSON.
 
@@ -120,11 +148,22 @@ class ExtractionPrompts:
                 "events": [
                     {{
                         "title": "...",
+                        "event_type": "...",
                         "description": "...",
-                        "severity": "..."
+                        "affected_entity_name": "...",
+                        "severity": "low|medium|high|critical"
                     }}
                 ]
             }}
+
+            Rules:
+
+            - Return ONLY JSON.
+            - Do not include markdown.
+            - Do not explain your answer.
+            - Do not invent events.
+            - Severity must be one of:
+              low, medium, high, critical.
 
             Document:
 
