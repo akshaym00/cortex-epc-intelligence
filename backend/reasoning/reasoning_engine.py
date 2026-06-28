@@ -1,16 +1,18 @@
 """
 Reasoning Engine for Project Cortex.
 
-Uses graph traversal to identify downstream impacts
-of changes within a project.
+Provides graph-based reasoning capabilities over the
+Living Project Model.
 """
 
 import networkx as nx
 
+from backend.graph.graph_utils import GraphUtils
+
 
 class ReasoningEngine:
     """
-    Performs reasoning over the Living Project Graph.
+    Performs reasoning using the Living Project Graph.
     """
 
     def get_downstream_entities(
@@ -19,8 +21,11 @@ class ReasoningEngine:
         entity_id: str,
     ) -> list[str]:
         """
-        Return all downstream entities affected by
+        Return every downstream entity affected by
         the supplied entity.
         """
 
-        return list(nx.descendants(graph, entity_id))
+        return GraphUtils.find_downstream_entities(
+            graph,
+            entity_id,
+        )
