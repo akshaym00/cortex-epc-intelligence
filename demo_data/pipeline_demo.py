@@ -19,14 +19,22 @@ for entity in result.entities:
         f"{entity.entity_type.value:12} {entity.name}"
     )
 
+print("\nRelationships\n")
+
+for relationship in result.relationships:
+
+    print(
+        relationship.source_entity_id,
+        "--",
+        relationship.relationship_type.value,
+        "-->",
+        relationship.target_entity_id,
+    )
+
 print()
 
-print(
-    "Graph Nodes:",
-    result.project.metadata["graph"].number_of_nodes(),
-)
+graph = result.project.metadata["graph"]
 
-print(
-    "Graph Edges:",
-    result.project.metadata["graph"].number_of_edges(),
-)
+print("Graph Nodes :", graph.number_of_nodes())
+
+print("Graph Edges :", graph.number_of_edges())

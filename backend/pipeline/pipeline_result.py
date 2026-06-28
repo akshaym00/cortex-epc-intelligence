@@ -6,6 +6,7 @@ from pydantic import BaseModel
 
 from backend.models.entity import Entity
 from backend.models.project import Project
+from backend.models.relationship import Relationship
 
 
 class PipelineResult(BaseModel):
@@ -16,6 +17,8 @@ class PipelineResult(BaseModel):
     document_text: str
 
     entities: list[Entity]
+
+    relationships: list[Relationship]
 
     project: Project
 

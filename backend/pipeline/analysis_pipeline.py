@@ -5,6 +5,7 @@ Coordinates the complete document analysis workflow.
 """
 
 from backend.extraction.entity_extractor import EntityExtractor
+from backend.extraction.relationship_extractor import RelationshipExtractor
 from backend.graph.graph_builder import GraphBuilder
 from backend.ingestion.loader_factory import LoaderFactory
 from backend.models.project import Project
@@ -20,6 +21,8 @@ class AnalysisPipeline:
 
         self.entity_extractor = EntityExtractor()
 
+        self.relationship_extractor = RelationshipExtractor()
+
         self.graph_builder = GraphBuilder()
 
     def analyze(
@@ -33,10 +36,20 @@ class AnalysisPipeline:
 
         entities = self.entity_extractor.extract(document_text)
 
+        entity_lookup = {
+            entity.name: entity.id
+            for entity in entities
+        }
+
+        relationships = self.relationship_extractor.extract(
+            document_text,
+            entity_lookup,
+        )
+
         project = Project(
             name="Auto Generated Project",
             entities=entities,
-            relationships=[],
+            relationships=relationships,
         )
 
         graph = self.graph_builder.build(project)
@@ -46,5 +59,6 @@ class AnalysisPipeline:
         return PipelineResult(
             document_text=document_text,
             entities=entities,
+            relationships=relationships,
             project=project,
         )

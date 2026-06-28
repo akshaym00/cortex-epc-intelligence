@@ -3,7 +3,7 @@ import json
 from backend.pipeline.analysis_pipeline import AnalysisPipeline
 
 
-class FakeLLMClient:
+class FakeEntityLLM:
 
     def generate(self, prompt: str):
 
@@ -25,11 +25,30 @@ class FakeLLMClient:
         )
 
 
+class FakeRelationshipLLM:
+
+    def generate(self, prompt: str):
+
+        return json.dumps(
+            {
+                "relationships": [
+                    {
+                        "source": "Cummins",
+                        "relationship_type": "supplies",
+                        "target": "Generator G-12",
+                    }
+                ]
+            }
+        )
+
+
 def test_analysis_pipeline():
 
     pipeline = AnalysisPipeline()
 
-    pipeline.entity_extractor.client = FakeLLMClient()
+    pipeline.entity_extractor.client = FakeEntityLLM()
+
+    pipeline.relationship_extractor.client = FakeRelationshipLLM()
 
     result = pipeline.analyze(
         "demo_data/sample_document.txt"
@@ -37,6 +56,8 @@ def test_analysis_pipeline():
 
     assert len(result.entities) == 2
 
-    assert result.project.name == "Auto Generated Project"
+    assert len(result.relationships) == 1
 
     assert result.project.metadata["graph"].number_of_nodes() == 2
+
+    assert result.project.metadata["graph"].number_of_edges() == 1
