@@ -62,9 +62,27 @@ class ExtractionPrompts:
     def relationship_extraction(document: str) -> str:
         return dedent(
             f"""
-            You are an EPC project relationship extraction assistant.
+            You are an EPC project knowledge extraction assistant.
 
-            Extract every relationship between entities.
+            Extract every relationship that exists between project entities.
+
+            Valid relationship types:
+
+            - depends_on
+            - requires
+            - supplies
+            - installed_by
+            - owned_by
+            - modifies
+            - references
+            - generates
+            - mitigates
+            - affects
+            - located_in
+            - approved_by
+            - triggers
+            - part_of
+            - caused_by
 
             Return ONLY valid JSON.
 
