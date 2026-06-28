@@ -71,3 +71,15 @@ class RelationshipType(str, Enum):
     PART_OF = "part_of"
 
     CAUSED_BY = "caused_by"
+class ImpactSeverity(str, Enum):
+    """
+    Indicates how severe an impact is.
+    """
+
+    LOW = "low"
+
+    MEDIUM = "medium"
+
+    HIGH = "high"
+
+    CRITICAL = "critical"
