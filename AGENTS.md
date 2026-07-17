@@ -83,7 +83,7 @@ See [ARCHITECTURE.md](docs/ARCHITECTURE.md) for the complete architecture diagra
 
 ### LLM Integration
 - **Mock Mode** (`MOCK_MODE=true` in .env): Returns "MOCK_RESPONSE" for dev/testing
-- **Production** (`MOCK_MODE=false`): OpenAI API with gpt-5-mini
+- **Production** (`MOCK_MODE=false`): OpenAI API with gpt-5
 - .env loaded explicitly from project root in `backend/ai/llm_client.py`
 
 ## Potential Pitfalls

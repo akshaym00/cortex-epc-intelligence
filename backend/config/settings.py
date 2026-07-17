@@ -25,7 +25,7 @@ class Settings:
 
     # OpenAI
     OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
-    OPENAI_MODEL: str = os.getenv("OPENAI_MODEL", "gpt-5-mini")
+    OPENAI_MODEL: str = os.getenv("OPENAI_MODEL", "gpt-5")
 
     # Mock mode (set to "true" for development without API calls)
     MOCK_MODE: bool = os.getenv("MOCK_MODE", "true").lower() == "true"

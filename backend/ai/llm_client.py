@@ -60,7 +60,7 @@ class LLMClient:
     def generate(
         self,
         prompt: str,
-        model: str = "gpt-5-mini",
+        model: str = "gpt-5",
     ) -> str:
         """
         Generate a response from the language model.
