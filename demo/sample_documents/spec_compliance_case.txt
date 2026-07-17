@@ -1,0 +1,6 @@
+UPS Vendor Submittal Review — Data Hall A
+
+Requirement [Electrical Specification 26 33 53 §2.4.1, page 47]: UPS system efficiency at 50% load >= 96.0 %
+Vendor submittal [VoltSafe UPS-01 Submittal VS-442, page 12]: UPS system efficiency at 50% load = 94.5 %
+
+Vendor VoltSafe submitted UPS-01 for Data Hall A. Technical Submittal Review must be completed before UPS Procurement Approval. The electrical consultant owns the review and must resolve any specification deviation before approval.

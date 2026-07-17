@@ -1,0 +1,56 @@
+{
+  "schedule_name": "Project Cortex demo baseline",
+  "_cost_note": "daily_delay_cost is an illustrative assumption for the prototype only — not an audited figure. It represents a blended estimate of idle labour, equipment rental, and overhead for a mid-scale data-centre fit-out at approximately INR 18,00,000 per calendar day of delay.",
+  "daily_delay_cost": 1800000,
+  "activities": [
+    {
+      "name": "Generator Delivery",
+      "aliases": ["generator g-12", "diesel generator", "generator delivery"],
+      "baseline_start": "2026-07-15",
+      "baseline_finish": "2026-07-15",
+      "critical": true
+    },
+    {
+      "name": "Electrical Testing",
+      "aliases": ["electrical testing", "electrical installation"],
+      "baseline_start": "2026-07-16",
+      "baseline_finish": "2026-07-20",
+      "critical": true
+    },
+    {
+      "name": "Commissioning",
+      "aliases": ["commissioning", "commissioning activities", "cooling commissioning"],
+      "baseline_start": "2026-07-22",
+      "baseline_finish": "2026-07-28",
+      "critical": true
+    },
+    {
+      "name": "Chiller Delivery",
+      "aliases": ["chiller ch-02", "ch-02", "chiller"],
+      "baseline_start": "2026-07-10",
+      "baseline_finish": "2026-07-12",
+      "critical": true
+    },
+    {
+      "name": "Raised Floor Installation",
+      "aliases": ["raised floor installation", "raised-floor installation", "raised floor"],
+      "baseline_start": "2026-07-08",
+      "baseline_finish": "2026-07-10",
+      "critical": false
+    },
+    {
+      "name": "Integrated Systems Testing",
+      "aliases": ["integrated systems testing", "system testing", "ist"],
+      "baseline_start": "2026-07-21",
+      "baseline_finish": "2026-07-23",
+      "critical": true
+    },
+    {
+      "name": "Data Hall A Handover",
+      "aliases": ["data hall a handover", "data hall handover", "handover"],
+      "baseline_start": "2026-07-29",
+      "baseline_finish": "2026-07-29",
+      "critical": true
+    }
+  ]
+}

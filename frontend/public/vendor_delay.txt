@@ -1,0 +1,57 @@
+VENDOR DELAY NOTICE — Data Hall A Fit-Out
+Reference: VDN-2026-007
+Date: 9 July 2026
+Issued By: Vendor ABC
+To: Project Team
+
+Subject: Diesel Generator Delivery Delay — 7 Calendar Days
+
+Vendor ABC has informed the Project Team that the Diesel Generator delivery to site
+will be delayed by 7 calendar days due to a factory testing overrun and transport
+scheduling conflict.
+
+ENTITIES INVOLVED
+
+Vendor ABC supplies the Diesel Generator to the Data Hall A project. Vendor ABC is
+the primary equipment vendor for this package and maintains a direct supply
+relationship with the Project Team.
+
+The Diesel Generator is a critical piece of mechanical infrastructure required for
+temporary power supply during Electrical Installation. The Diesel Generator must
+be on site and commissioned before Electrical Installation can commence.
+
+Generator Delivery is the scheduled site delivery activity managed by Vendor ABC.
+Generator Delivery depends on Vendor ABC completing factory acceptance testing.
+Generator Delivery is now delayed by 7 days.
+
+Electrical Installation is a project activity owned by the Project Team. Electrical
+Installation depends on Generator Delivery. Electrical Installation cannot begin
+until the Diesel Generator has been delivered and accepted on site.
+
+Commissioning Activities are the final project phase owned by the Project Team.
+Commissioning Activities depend on Electrical Installation completion. Any delay to
+Electrical Installation directly delays Commissioning Activities.
+
+Procurement Approval is a milestone that must be obtained before Electrical
+Installation can formally commence. Vendor ABC must resubmit a revised delivery
+schedule before Procurement Approval can be granted.
+
+IMPACT ASSESSMENT
+
+Generator Delivery is delayed by 7 days. This directly delays Electrical
+Installation by 7 days. Commissioning Activities are consequently delayed by 7
+days. Procurement Approval may be deferred pending revised programme.
+
+The Project Team must revise the programme and notify all downstream activity
+owners of the 7-day slippage.
+
+ACTIONS REQUIRED
+
+Vendor ABC must provide a written recovery plan within 24 hours detailing revised
+Generator Delivery dates and any mitigation measures.
+
+The Project Team must review impact on Electrical Installation and Commissioning
+Activities and issue updated programme dates to all stakeholders.
+
+Procurement Approval should be withheld until Vendor ABC confirms the revised
+Generator Delivery schedule.

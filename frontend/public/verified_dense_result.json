@@ -1,0 +1,1185 @@
+{
+  "entities": [
+    {
+      "name": "RFI-001",
+      "entity_type": "document",
+      "description": "RFI stating Vendor Alpha confirms UPS-01 delivery on 15 July and that Electrical Room Fitout depends on UPS-01 delivery."
+    },
+    {
+      "name": "RFI-002",
+      "entity_type": "document",
+      "description": "RFI stating Vendor Beta reports Chiller CH-02 is delayed by 5 days and that Cooling Loop Testing depends on CH-02 delivery."
+    },
+    {
+      "name": "RFI-003",
+      "entity_type": "document",
+      "description": "RFI in which Contractor Delta requests approval for containment routing in Data Hall A."
+    },
+    {
+      "name": "RFI-004",
+      "entity_type": "document",
+      "description": "RFI stating Fire Suppression Testing requires FM-200 cylinders from Vendor Gamma."
+    },
+    {
+      "name": "RFI-005",
+      "entity_type": "document",
+      "description": "RFI noting Generator G-12 factory acceptance testing is complete and site delivery remains scheduled for 18 July."
+    },
+    {
+      "name": "RFI-006",
+      "entity_type": "document",
+      "description": "RFI stating Electrical Installation must finish before Integrated Systems Testing begins."
+    },
+    {
+      "name": "RFI-007",
+      "entity_type": "document",
+      "description": "RFI stating Commissioning depends on Electrical Testing and Cooling Loop Testing."
+    },
+    {
+      "name": "RFI-008",
+      "entity_type": "document",
+      "description": "RFI stating Vendor Alpha supplies UPS-01 and UPS-02 for Data Hall A."
+    },
+    {
+      "name": "RFI-009",
+      "entity_type": "document",
+      "description": "RFI stating Contractor Omega owns the raised-floor installation package."
+    },
+    {
+      "name": "RFI-010",
+      "entity_type": "document",
+      "description": "RFI noting Raised Floor Installation is delayed by 2 days due to access restrictions."
+    },
+    {
+      "name": "RFI-011",
+      "entity_type": "document",
+      "description": "RFI stating Network Cabling requires containment completion in Data Hall A."
+    },
+    {
+      "name": "RFI-012",
+      "entity_type": "document",
+      "description": "RFI stating Security System Testing depends on network cabling and access-control panel delivery."
+    },
+    {
+      "name": "RFI-013",
+      "entity_type": "document",
+      "description": "RFI stating Vendor Sigma supplies the access-control panels."
+    },
+    {
+      "name": "RFI-014",
+      "entity_type": "document",
+      "description": "RFI stating BMS Integration references the approved controls interface document."
+    },
+    {
+      "name": "RFI-015",
+      "entity_type": "document",
+      "description": "RFI stating Cooling Commissioning requires Chiller CH-02 and primary pump P-04."
+    },
+    {
+      "name": "RFI-016",
+      "entity_type": "document",
+      "description": "RFI stating Vendor Beta supplies primary pump P-04."
+    },
+    {
+      "name": "RFI-017",
+      "entity_type": "document",
+      "description": "RFI stating Integrated Systems Testing requires utility power availability."
+    },
+    {
+      "name": "RFI-018",
+      "entity_type": "document",
+      "description": "RFI stating Utility Power Energization is approved by the electrical inspector."
+    },
+    {
+      "name": "RFI-019",
+      "entity_type": "document",
+      "description": "RFI stating Data Hall A handover depends on Integrated Systems Testing."
+    },
+    {
+      "name": "RFI-020",
+      "entity_type": "document",
+      "description": "RFI stating Project completion depends on Data Hall A handover and final compliance approval."
+    },
+    {
+      "name": "approved controls interface document",
+      "entity_type": "document",
+      "description": "Approved controls interface document referenced by BMS Integration."
+    },
+    {
+      "name": "Vendor Alpha",
+      "entity_type": "vendor",
+      "description": "Vendor supplying UPS equipment; supplies UPS-01 and UPS-02 for Data Hall A."
+    },
+    {
+      "name": "Vendor Beta",
+      "entity_type": "vendor",
+      "description": "Vendor referenced for Chiller CH-02 and supplying primary pump P-04."
+    },
+    {
+      "name": "Vendor Gamma",
+      "entity_type": "vendor",
+      "description": "Vendor supplying FM-200 cylinders required for Fire Suppression Testing."
+    },
+    {
+      "name": "Vendor Sigma",
+      "entity_type": "vendor",
+      "description": "Vendor supplying access-control panels for security system."
+    },
+    {
+      "name": "Contractor Delta",
+      "entity_type": "contractor",
+      "description": "Contractor requesting approval for containment routing in Data Hall A."
+    },
+    {
+      "name": "Contractor Omega",
+      "entity_type": "contractor",
+      "description": "Contractor owning the raised-floor installation package."
+    },
+    {
+      "name": "UPS-01",
+      "entity_type": "equipment",
+      "description": "Uninterruptible power supply unit referenced for Electrical Room Fitout and supplied by Vendor Alpha."
+    },
+    {
+      "name": "UPS-02",
+      "entity_type": "equipment",
+      "description": "Uninterruptible power supply unit supplied by Vendor Alpha for Data Hall A."
+    },
+    {
+      "name": "Chiller CH-02",
+      "entity_type": "equipment",
+      "description": "Chiller required for Cooling Loop Testing and Cooling Commissioning."
+    },
+    {
+      "name": "Generator G-12",
+      "entity_type": "equipment",
+      "description": "Generator which underwent factory acceptance testing and has a scheduled site delivery."
+    },
+    {
+      "name": "FM-200 cylinders",
+      "entity_type": "equipment",
+      "description": "Fire suppression agent cylinders required for Fire Suppression Testing and supplied by Vendor Gamma."
+    },
+    {
+      "name": "primary pump P-04",
+      "entity_type": "equipment",
+      "description": "Primary pump required for Cooling Commissioning and supplied by Vendor Beta."
+    },
+    {
+      "name": "access-control panels",
+      "entity_type": "equipment",
+      "description": "Security access-control panels required for Security System Testing and supplied by Vendor Sigma."
+    },
+    {
+      "name": "Cooling Loop",
+      "entity_type": "system",
+      "description": "Cooling loop system whose testing depends on delivery of Chiller CH-02."
+    },
+    {
+      "name": "BMS Integration",
+      "entity_type": "system",
+      "description": "Building management system integration activity referencing the approved controls interface document."
+    },
+    {
+      "name": "Security System",
+      "entity_type": "system",
+      "description": "Security system requiring network cabling and access-control panels and subject to Security System Testing."
+    },
+    {
+      "name": "Network Cabling",
+      "entity_type": "system",
+      "description": "Network cabling scope requiring containment completion in Data Hall A and a prerequisite for Security System Testing."
+    },
+    {
+      "name": "Electrical Installation",
+      "entity_type": "task",
+      "description": "Electrical installation work that must finish before Integrated Systems Testing begins."
+    },
+    {
+      "name": "Integrated Systems Testing",
+      "entity_type": "task",
+      "description": "Integrated testing activity that requires utility power availability and is a prerequisite for Data Hall A handover."
+    },
+    {
+      "name": "Cooling Loop Testing",
+      "entity_type": "task",
+      "description": "Testing of the cooling loop that depends on delivery of Chiller CH-02."
+    },
+    {
+      "name": "Electrical Testing",
+      "entity_type": "task",
+      "description": "Electrical testing activity that is a dependency for Commissioning."
+    },
+    {
+      "name": "Commissioning",
+      "entity_type": "task",
+      "description": "Commissioning activity that depends on Electrical Testing and Cooling Loop Testing."
+    },
+    {
+      "name": "Cooling Commissioning",
+      "entity_type": "task",
+      "description": "Cooling commissioning requiring Chiller CH-02 and primary pump P-04."
+    },
+    {
+      "name": "Fire Suppression Testing",
+      "entity_type": "task",
+      "description": "Fire suppression testing activity that requires FM-200 cylinders."
+    },
+    {
+      "name": "Raised Floor Installation",
+      "entity_type": "task",
+      "description": "Raised-floor installation activity owned by Contractor Omega."
+    },
+    {
+      "name": "Electrical Room Fitout",
+      "entity_type": "task",
+      "description": "Fitout work in the Electrical Room that depends on delivery of UPS-01."
+    },
+    {
+      "name": "Network containment routing (Data Hall A)",
+      "entity_type": "task",
+      "description": "Containment routing activity in Data Hall A for network cabling for which approval was requested by Contractor Delta."
+    },
+    {
+      "name": "Factory Acceptance Testing",
+      "entity_type": "task",
+      "description": "Factory acceptance testing activity referenced for Generator G-12 (noted as complete)."
+    },
+    {
+      "name": "Data Hall A handover",
+      "entity_type": "milestone",
+      "description": "Handover milestone for Data Hall A that depends on completion of Integrated Systems Testing."
+    },
+    {
+      "name": "Project completion",
+      "entity_type": "milestone",
+      "description": "Project completion milestone that depends on Data Hall A handover and final compliance approval."
+    },
+    {
+      "name": "Containment routing approval (Data Hall A)",
+      "entity_type": "approval",
+      "description": "Approval requested for containment routing in Data Hall A (requested by Contractor Delta)."
+    },
+    {
+      "name": "Utility Power Energization approval",
+      "entity_type": "approval",
+      "description": "Approval of utility power energization provided by the electrical inspector."
+    },
+    {
+      "name": "Final compliance approval",
+      "entity_type": "approval",
+      "description": "Final compliance approval referenced as a dependency for Project completion."
+    },
+    {
+      "name": "Data Hall A",
+      "entity_type": "location",
+      "description": "Project location referenced for equipment installation, containment, network cabling, raised-floor installation, and handover."
+    },
+    {
+      "name": "Electrical Room",
+      "entity_type": "location",
+      "description": "Location for Electrical Room Fitout which depends on UPS-01 delivery."
+    },
+    {
+      "name": "Electrical inspector",
+      "entity_type": "person",
+      "description": "Inspector role who approved Utility Power Energization."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "UPS-01",
+      "relationship_type": "depends_on",
+      "target": "Electrical Room Fitout"
+    },
+    {
+      "source": "Vendor Alpha",
+      "relationship_type": "supplies",
+      "target": "UPS-01"
+    },
+    {
+      "source": "RFI-001",
+      "relationship_type": "references",
+      "target": "Vendor Alpha"
+    },
+    {
+      "source": "RFI-001",
+      "relationship_type": "references",
+      "target": "UPS-01"
+    },
+    {
+      "source": "RFI-001",
+      "relationship_type": "references",
+      "target": "Electrical Room Fitout"
+    },
+    {
+      "source": "Chiller CH-02",
+      "relationship_type": "depends_on",
+      "target": "Cooling Loop Testing"
+    },
+    {
+      "source": "RFI-002",
+      "relationship_type": "references",
+      "target": "Vendor Beta"
+    },
+    {
+      "source": "RFI-002",
+      "relationship_type": "references",
+      "target": "Chiller CH-02"
+    },
+    {
+      "source": "RFI-002",
+      "relationship_type": "references",
+      "target": "Cooling Loop Testing"
+    },
+    {
+      "source": "RFI-003",
+      "relationship_type": "references",
+      "target": "Contractor Delta"
+    },
+    {
+      "source": "RFI-003",
+      "relationship_type": "references",
+      "target": "Containment routing approval (Data Hall A)"
+    },
+    {
+      "source": "RFI-003",
+      "relationship_type": "references",
+      "target": "Data Hall A"
+    },
+    {
+      "source": "Fire Suppression Testing",
+      "relationship_type": "requires",
+      "target": "FM-200 cylinders"
+    },
+    {
+      "source": "Vendor Gamma",
+      "relationship_type": "supplies",
+      "target": "FM-200 cylinders"
+    },
+    {
+      "source": "RFI-004",
+      "relationship_type": "references",
+      "target": "Fire Suppression Testing"
+    },
+    {
+      "source": "RFI-004",
+      "relationship_type": "references",
+      "target": "FM-200 cylinders"
+    },
+    {
+      "source": "RFI-004",
+      "relationship_type": "references",
+      "target": "Vendor Gamma"
+    },
+    {
+      "source": "Factory Acceptance Testing",
+      "relationship_type": "references",
+      "target": "Generator G-12"
+    },
+    {
+      "source": "RFI-005",
+      "relationship_type": "references",
+      "target": "Generator G-12"
+    },
+    {
+      "source": "RFI-005",
+      "relationship_type": "references",
+      "target": "Factory Acceptance Testing"
+    },
+    {
+      "source": "Electrical Installation",
+      "relationship_type": "depends_on",
+      "target": "Integrated Systems Testing"
+    },
+    {
+      "source": "RFI-006",
+      "relationship_type": "references",
+      "target": "Electrical Installation"
+    },
+    {
+      "source": "RFI-006",
+      "relationship_type": "references",
+      "target": "Integrated Systems Testing"
+    },
+    {
+      "source": "Electrical Testing",
+      "relationship_type": "depends_on",
+      "target": "Commissioning"
+    },
+    {
+      "source": "Cooling Loop Testing",
+      "relationship_type": "depends_on",
+      "target": "Commissioning"
+    },
+    {
+      "source": "RFI-007",
+      "relationship_type": "references",
+      "target": "Commissioning"
+    },
+    {
+      "source": "RFI-007",
+      "relationship_type": "references",
+      "target": "Electrical Testing"
+    },
+    {
+      "source": "RFI-007",
+      "relationship_type": "references",
+      "target": "Cooling Loop Testing"
+    },
+    {
+      "source": "Vendor Alpha",
+      "relationship_type": "supplies",
+      "target": "UPS-02"
+    },
+    {
+      "source": "UPS-01",
+      "relationship_type": "located_in",
+      "target": "Data Hall A"
+    },
+    {
+      "source": "UPS-02",
+      "relationship_type": "located_in",
+      "target": "Data Hall A"
+    },
+    {
+      "source": "RFI-008",
+      "relationship_type": "references",
+      "target": "Vendor Alpha"
+    },
+    {
+      "source": "RFI-008",
+      "relationship_type": "references",
+      "target": "UPS-01"
+    },
+    {
+      "source": "RFI-008",
+      "relationship_type": "references",
+      "target": "UPS-02"
+    },
+    {
+      "source": "RFI-008",
+      "relationship_type": "references",
+      "target": "Data Hall A"
+    },
+    {
+      "source": "Raised Floor Installation",
+      "relationship_type": "owned_by",
+      "target": "Contractor Omega"
+    },
+    {
+      "source": "RFI-009",
+      "relationship_type": "references",
+      "target": "Contractor Omega"
+    },
+    {
+      "source": "RFI-009",
+      "relationship_type": "references",
+      "target": "Raised Floor Installation"
+    },
+    {
+      "source": "RFI-010",
+      "relationship_type": "references",
+      "target": "Raised Floor Installation"
+    },
+    {
+      "source": "Network Cabling",
+      "relationship_type": "requires",
+      "target": "Containment routing approval (Data Hall A)"
+    },
+    {
+      "source": "RFI-011",
+      "relationship_type": "references",
+      "target": "Network Cabling"
+    },
+    {
+      "source": "RFI-011",
+      "relationship_type": "references",
+      "target": "Containment routing approval (Data Hall A)"
+    },
+    {
+      "source": "Network Cabling",
+      "relationship_type": "depends_on",
+      "target": "Security System"
+    },
+    {
+      "source": "access-control panels",
+      "relationship_type": "depends_on",
+      "target": "Security System"
+    },
+    {
+      "source": "RFI-012",
+      "relationship_type": "references",
+      "target": "Network Cabling"
+    },
+    {
+      "source": "RFI-012",
+      "relationship_type": "references",
+      "target": "access-control panels"
+    },
+    {
+      "source": "RFI-012",
+      "relationship_type": "references",
+      "target": "Security System"
+    },
+    {
+      "source": "Vendor Sigma",
+      "relationship_type": "supplies",
+      "target": "access-control panels"
+    },
+    {
+      "source": "RFI-013",
+      "relationship_type": "references",
+      "target": "Vendor Sigma"
+    },
+    {
+      "source": "RFI-013",
+      "relationship_type": "references",
+      "target": "access-control panels"
+    },
+    {
+      "source": "BMS Integration",
+      "relationship_type": "references",
+      "target": "approved controls interface document"
+    },
+    {
+      "source": "RFI-014",
+      "relationship_type": "references",
+      "target": "BMS Integration"
+    },
+    {
+      "source": "RFI-014",
+      "relationship_type": "references",
+      "target": "approved controls interface document"
+    },
+    {
+      "source": "Cooling Commissioning",
+      "relationship_type": "requires",
+      "target": "Chiller CH-02"
+    },
+    {
+      "source": "Cooling Commissioning",
+      "relationship_type": "requires",
+      "target": "primary pump P-04"
+    },
+    {
+      "source": "RFI-015",
+      "relationship_type": "references",
+      "target": "Cooling Commissioning"
+    },
+    {
+      "source": "RFI-015",
+      "relationship_type": "references",
+      "target": "Chiller CH-02"
+    },
+    {
+      "source": "RFI-015",
+      "relationship_type": "references",
+      "target": "primary pump P-04"
+    },
+    {
+      "source": "Vendor Beta",
+      "relationship_type": "supplies",
+      "target": "primary pump P-04"
+    },
+    {
+      "source": "RFI-016",
+      "relationship_type": "references",
+      "target": "Vendor Beta"
+    },
+    {
+      "source": "RFI-016",
+      "relationship_type": "references",
+      "target": "primary pump P-04"
+    },
+    {
+      "source": "Utility Power Energization approval",
+      "relationship_type": "depends_on",
+      "target": "Integrated Systems Testing"
+    },
+    {
+      "source": "RFI-017",
+      "relationship_type": "references",
+      "target": "Integrated Systems Testing"
+    },
+    {
+      "source": "RFI-017",
+      "relationship_type": "references",
+      "target": "Utility Power Energization approval"
+    },
+    {
+      "source": "Utility Power Energization approval",
+      "relationship_type": "approved_by",
+      "target": "Electrical inspector"
+    },
+    {
+      "source": "RFI-018",
+      "relationship_type": "references",
+      "target": "Utility Power Energization approval"
+    },
+    {
+      "source": "RFI-018",
+      "relationship_type": "references",
+      "target": "Electrical inspector"
+    },
+    {
+      "source": "Integrated Systems Testing",
+      "relationship_type": "depends_on",
+      "target": "Data Hall A handover"
+    },
+    {
+      "source": "RFI-019",
+      "relationship_type": "references",
+      "target": "Data Hall A handover"
+    },
+    {
+      "source": "RFI-019",
+      "relationship_type": "references",
+      "target": "Integrated Systems Testing"
+    },
+    {
+      "source": "Data Hall A handover",
+      "relationship_type": "depends_on",
+      "target": "Project completion"
+    },
+    {
+      "source": "Final compliance approval",
+      "relationship_type": "depends_on",
+      "target": "Project completion"
+    },
+    {
+      "source": "RFI-020",
+      "relationship_type": "references",
+      "target": "Project completion"
+    },
+    {
+      "source": "RFI-020",
+      "relationship_type": "references",
+      "target": "Data Hall A handover"
+    },
+    {
+      "source": "RFI-020",
+      "relationship_type": "references",
+      "target": "Final compliance approval"
+    }
+  ],
+  "events": [
+    {
+      "title": "UPS-01 delivery scheduled",
+      "event_type": "delivery",
+      "description": "Vendor Alpha confirms delivery of UPS-01 on 15 July.",
+      "severity": "low",
+      "reported_by": "Vendor Alpha",
+      "affected_entities": [
+        "Data Hall A",
+        "Electrical Room Fitout"
+      ]
+    },
+    {
+      "title": "Chiller CH-02 delayed",
+      "event_type": "delay",
+      "description": "Vendor Beta reports Chiller CH-02 is delayed by 5 days.",
+      "severity": "medium",
+      "reported_by": "Vendor Beta",
+      "affected_entities": [
+        "Cooling Loop Testing",
+        "Commissioning"
+      ]
+    },
+    {
+      "title": "Containment routing approval requested",
+      "event_type": "approval",
+      "description": "Contractor Delta has requested approval for containment routing in Data Hall A.",
+      "severity": "low",
+      "reported_by": "Contractor Delta",
+      "affected_entities": []
+    },
+    {
+      "title": "Factory Acceptance Testing complete",
+      "event_type": "completion",
+      "description": "Factory Acceptance Testing for Generator G-12 is complete.",
+      "severity": "low",
+      "reported_by": null,
+      "affected_entities": [
+        "Generator G-12"
+      ]
+    },
+    {
+      "title": "Generator G-12 site delivery scheduled",
+      "event_type": "delivery",
+      "description": "Generator G-12 site delivery remains scheduled for 18 July.",
+      "severity": "low",
+      "reported_by": null,
+      "affected_entities": []
+    },
+    {
+      "title": "Electrical Installation dependency for systems testing",
+      "event_type": "risk",
+      "description": "Electrical Installation must finish before Integrated Systems Testing can begin.",
+      "severity": "medium",
+      "reported_by": null,
+      "affected_entities": [
+        "Data Hall A handover",
+        "Project completion"
+      ]
+    },
+    {
+      "title": "Commissioning dependency on testing",
+      "event_type": "risk",
+      "description": "Commissioning depends on completion of Electrical Testing and Cooling Loop Testing.",
+      "severity": "high",
+      "reported_by": null,
+      "affected_entities": []
+    },
+    {
+      "title": "Raised Floor Installation package ownership",
+      "event_type": "installation",
+      "description": "Contractor Omega owns the Raised Floor Installation package.",
+      "severity": "low",
+      "reported_by": "Contractor Omega",
+      "affected_entities": [
+        "Contractor Omega"
+      ]
+    },
+    {
+      "title": "Security System testing dependency",
+      "event_type": "risk",
+      "description": "Security System testing depends on network cabling and delivery of access-control panels.",
+      "severity": "medium",
+      "reported_by": null,
+      "affected_entities": []
+    },
+    {
+      "title": "BMS Integration dependency",
+      "event_type": "risk",
+      "description": "BMS Integration references and depends on the approved controls interface document.",
+      "severity": "low",
+      "reported_by": null,
+      "affected_entities": [
+        "approved controls interface document"
+      ]
+    },
+    {
+      "title": "Utility Power Energization approved",
+      "event_type": "approval",
+      "description": "Utility Power Energization is approved by the electrical inspector.",
+      "severity": "low",
+      "reported_by": null,
+      "affected_entities": [
+        "Electrical inspector",
+        "Data Hall A handover",
+        "Project completion",
+        "Integrated Systems Testing"
+      ]
+    },
+    {
+      "title": "Electrical Room Fitout dependency on UPS-01",
+      "event_type": "risk",
+      "description": "Electrical Room Fitout depends on delivery of UPS-01.",
+      "severity": "medium",
+      "reported_by": null,
+      "affected_entities": []
+    },
+    {
+      "title": "Data Hall A handover dependency",
+      "event_type": "risk",
+      "description": "Data Hall A handover depends on completion of Integrated Systems Testing.",
+      "severity": "medium",
+      "reported_by": null,
+      "affected_entities": [
+        "Project completion"
+      ]
+    },
+    {
+      "title": "Project completion dependency",
+      "event_type": "risk",
+      "description": "Project completion depends on Data Hall A handover and final compliance approval.",
+      "severity": "high",
+      "reported_by": null,
+      "affected_entities": []
+    }
+  ],
+  "impacts": [
+    {
+      "event_title": "UPS-01 delivery scheduled",
+      "summary": "2 downstream entities affected.",
+      "overall_severity": "medium",
+      "delay_days": 0,
+      "projected_completion_impact_days": 0,
+      "methodology": "Delay extracted from the event and propagated through dependency paths against the project baseline schedule.",
+      "impacted_entities": [
+        {
+          "name": "Data Hall A",
+          "severity": "medium",
+          "reason": "UPS-01 \u2192 Data Hall A",
+          "dependency_path": [
+            "UPS-01",
+            "Data Hall A"
+          ],
+          "delay_days": 0,
+          "baseline_start": null,
+          "baseline_finish": null,
+          "forecast_start": null,
+          "forecast_finish": null,
+          "critical_path": false
+        },
+        {
+          "name": "Electrical Room Fitout",
+          "severity": "medium",
+          "reason": "UPS-01 \u2192 Electrical Room Fitout",
+          "dependency_path": [
+            "UPS-01",
+            "Electrical Room Fitout"
+          ],
+          "delay_days": 0,
+          "baseline_start": null,
+          "baseline_finish": null,
+          "forecast_start": null,
+          "forecast_finish": null,
+          "critical_path": false
+        }
+      ]
+    },
+    {
+      "event_title": "Chiller CH-02 delayed",
+      "summary": "2 downstream entities affected; forecast critical-path slippage is 5 days.",
+      "overall_severity": "medium",
+      "delay_days": 5,
+      "projected_completion_impact_days": 5,
+      "methodology": "Delay extracted from the event and propagated through dependency paths against the project baseline schedule.",
+      "impacted_entities": [
+        {
+          "name": "Cooling Loop Testing",
+          "severity": "medium",
+          "reason": "Chiller CH-02 \u2192 Cooling Loop Testing",
+          "dependency_path": [
+            "Chiller CH-02",
+            "Cooling Loop Testing"
+          ],
+          "delay_days": 5,
+          "baseline_start": null,
+          "baseline_finish": null,
+          "forecast_start": null,
+          "forecast_finish": null,
+          "critical_path": false
+        },
+        {
+          "name": "Commissioning",
+          "severity": "medium",
+          "reason": "Chiller CH-02 \u2192 Cooling Loop Testing \u2192 Commissioning",
+          "dependency_path": [
+            "Chiller CH-02",
+            "Cooling Loop Testing",
+            "Commissioning"
+          ],
+          "delay_days": 5,
+          "baseline_start": "2026-07-22",
+          "baseline_finish": "2026-07-28",
+          "forecast_start": "2026-07-27",
+          "forecast_finish": "2026-08-02",
+          "critical_path": true
+        }
+      ]
+    },
+    {
+      "event_title": "Containment routing approval requested",
+      "summary": "0 downstream entities affected.",
+      "overall_severity": "low",
+      "delay_days": 0,
+      "projected_completion_impact_days": 0,
+      "methodology": "Delay extracted from the event and propagated through dependency paths against the project baseline schedule.",
+      "impacted_entities": []
+    },
+    {
+      "event_title": "Factory Acceptance Testing complete",
+      "summary": "1 downstream entities affected.",
+      "overall_severity": "medium",
+      "delay_days": 0,
+      "projected_completion_impact_days": 0,
+      "methodology": "Delay extracted from the event and propagated through dependency paths against the project baseline schedule.",
+      "impacted_entities": [
+        {
+          "name": "Generator G-12",
+          "severity": "medium",
+          "reason": "Factory Acceptance Testing \u2192 Generator G-12",
+          "dependency_path": [
+            "Factory Acceptance Testing",
+            "Generator G-12"
+          ],
+          "delay_days": 0,
+          "baseline_start": "2026-07-15",
+          "baseline_finish": "2026-07-15",
+          "forecast_start": "2026-07-15",
+          "forecast_finish": "2026-07-15",
+          "critical_path": true
+        }
+      ]
+    },
+    {
+      "event_title": "Generator G-12 site delivery scheduled",
+      "summary": "0 downstream entities affected.",
+      "overall_severity": "low",
+      "delay_days": 0,
+      "projected_completion_impact_days": 0,
+      "methodology": "Delay extracted from the event and propagated through dependency paths against the project baseline schedule.",
+      "impacted_entities": []
+    },
+    {
+      "event_title": "Electrical Installation dependency for systems testing",
+      "summary": "2 downstream entities affected.",
+      "overall_severity": "medium",
+      "delay_days": 0,
+      "projected_completion_impact_days": 0,
+      "methodology": "Delay extracted from the event and propagated through dependency paths against the project baseline schedule.",
+      "impacted_entities": [
+        {
+          "name": "Data Hall A handover",
+          "severity": "medium",
+          "reason": "Integrated Systems Testing \u2192 Data Hall A handover",
+          "dependency_path": [
+            "Integrated Systems Testing",
+            "Data Hall A handover"
+          ],
+          "delay_days": 0,
+          "baseline_start": null,
+          "baseline_finish": null,
+          "forecast_start": null,
+          "forecast_finish": null,
+          "critical_path": false
+        },
+        {
+          "name": "Project completion",
+          "severity": "medium",
+          "reason": "Integrated Systems Testing \u2192 Data Hall A handover \u2192 Project completion",
+          "dependency_path": [
+            "Integrated Systems Testing",
+            "Data Hall A handover",
+            "Project completion"
+          ],
+          "delay_days": 0,
+          "baseline_start": null,
+          "baseline_finish": null,
+          "forecast_start": null,
+          "forecast_finish": null,
+          "critical_path": false
+        }
+      ]
+    },
+    {
+      "event_title": "Commissioning dependency on testing",
+      "summary": "0 downstream entities affected.",
+      "overall_severity": "low",
+      "delay_days": 0,
+      "projected_completion_impact_days": 0,
+      "methodology": "Delay extracted from the event and propagated through dependency paths against the project baseline schedule.",
+      "impacted_entities": []
+    },
+    {
+      "event_title": "Raised Floor Installation package ownership",
+      "summary": "1 downstream entities affected.",
+      "overall_severity": "medium",
+      "delay_days": 0,
+      "projected_completion_impact_days": 0,
+      "methodology": "Delay extracted from the event and propagated through dependency paths against the project baseline schedule.",
+      "impacted_entities": [
+        {
+          "name": "Contractor Omega",
+          "severity": "medium",
+          "reason": "Raised Floor Installation \u2192 Contractor Omega",
+          "dependency_path": [
+            "Raised Floor Installation",
+            "Contractor Omega"
+          ],
+          "delay_days": 0,
+          "baseline_start": null,
+          "baseline_finish": null,
+          "forecast_start": null,
+          "forecast_finish": null,
+          "critical_path": false
+        }
+      ]
+    },
+    {
+      "event_title": "Security System testing dependency",
+      "summary": "0 downstream entities affected.",
+      "overall_severity": "low",
+      "delay_days": 0,
+      "projected_completion_impact_days": 0,
+      "methodology": "Delay extracted from the event and propagated through dependency paths against the project baseline schedule.",
+      "impacted_entities": []
+    },
+    {
+      "event_title": "BMS Integration dependency",
+      "summary": "1 downstream entities affected.",
+      "overall_severity": "medium",
+      "delay_days": 0,
+      "projected_completion_impact_days": 0,
+      "methodology": "Delay extracted from the event and propagated through dependency paths against the project baseline schedule.",
+      "impacted_entities": [
+        {
+          "name": "approved controls interface document",
+          "severity": "medium",
+          "reason": "BMS Integration \u2192 approved controls interface document",
+          "dependency_path": [
+            "BMS Integration",
+            "approved controls interface document"
+          ],
+          "delay_days": 0,
+          "baseline_start": null,
+          "baseline_finish": null,
+          "forecast_start": null,
+          "forecast_finish": null,
+          "critical_path": false
+        }
+      ]
+    },
+    {
+      "event_title": "Utility Power Energization approved",
+      "summary": "4 downstream entities affected.",
+      "overall_severity": "medium",
+      "delay_days": 0,
+      "projected_completion_impact_days": 0,
+      "methodology": "Delay extracted from the event and propagated through dependency paths against the project baseline schedule.",
+      "impacted_entities": [
+        {
+          "name": "Electrical inspector",
+          "severity": "medium",
+          "reason": "Utility Power Energization approval \u2192 Electrical inspector",
+          "dependency_path": [
+            "Utility Power Energization approval",
+            "Electrical inspector"
+          ],
+          "delay_days": 0,
+          "baseline_start": null,
+          "baseline_finish": null,
+          "forecast_start": null,
+          "forecast_finish": null,
+          "critical_path": false
+        },
+        {
+          "name": "Data Hall A handover",
+          "severity": "medium",
+          "reason": "Utility Power Energization approval \u2192 Integrated Systems Testing \u2192 Data Hall A handover",
+          "dependency_path": [
+            "Utility Power Energization approval",
+            "Integrated Systems Testing",
+            "Data Hall A handover"
+          ],
+          "delay_days": 0,
+          "baseline_start": null,
+          "baseline_finish": null,
+          "forecast_start": null,
+          "forecast_finish": null,
+          "critical_path": false
+        },
+        {
+          "name": "Project completion",
+          "severity": "medium",
+          "reason": "Utility Power Energization approval \u2192 Integrated Systems Testing \u2192 Data Hall A handover \u2192 Project completion",
+          "dependency_path": [
+            "Utility Power Energization approval",
+            "Integrated Systems Testing",
+            "Data Hall A handover",
+            "Project completion"
+          ],
+          "delay_days": 0,
+          "baseline_start": null,
+          "baseline_finish": null,
+          "forecast_start": null,
+          "forecast_finish": null,
+          "critical_path": false
+        },
+        {
+          "name": "Integrated Systems Testing",
+          "severity": "medium",
+          "reason": "Utility Power Energization approval \u2192 Integrated Systems Testing",
+          "dependency_path": [
+            "Utility Power Energization approval",
+            "Integrated Systems Testing"
+          ],
+          "delay_days": 0,
+          "baseline_start": null,
+          "baseline_finish": null,
+          "forecast_start": null,
+          "forecast_finish": null,
+          "critical_path": false
+        }
+      ]
+    },
+    {
+      "event_title": "Electrical Room Fitout dependency on UPS-01",
+      "summary": "0 downstream entities affected.",
+      "overall_severity": "low",
+      "delay_days": 0,
+      "projected_completion_impact_days": 0,
+      "methodology": "Delay extracted from the event and propagated through dependency paths against the project baseline schedule.",
+      "impacted_entities": []
+    },
+    {
+      "event_title": "Data Hall A handover dependency",
+      "summary": "1 downstream entities affected.",
+      "overall_severity": "medium",
+      "delay_days": 0,
+      "projected_completion_impact_days": 0,
+      "methodology": "Delay extracted from the event and propagated through dependency paths against the project baseline schedule.",
+      "impacted_entities": [
+        {
+          "name": "Project completion",
+          "severity": "medium",
+          "reason": "Data Hall A handover \u2192 Project completion",
+          "dependency_path": [
+            "Data Hall A handover",
+            "Project completion"
+          ],
+          "delay_days": 0,
+          "baseline_start": null,
+          "baseline_finish": null,
+          "forecast_start": null,
+          "forecast_finish": null,
+          "critical_path": false
+        }
+      ]
+    },
+    {
+      "event_title": "Project completion dependency",
+      "summary": "0 downstream entities affected.",
+      "overall_severity": "low",
+      "delay_days": 0,
+      "projected_completion_impact_days": 0,
+      "methodology": "Delay extracted from the event and propagated through dependency paths against the project baseline schedule.",
+      "impacted_entities": []
+    }
+  ],
+  "recommendations": [
+    {
+      "title": "Expedite delayed activity",
+      "description": "Request a vendor recovery plan within 24 hours. The reported 5-day delay currently creates 5 days of critical-path exposure. Track recovery milestones daily.",
+      "priority": "high",
+      "related_event": "Chiller CH-02 delayed"
+    },
+    {
+      "title": "Review project schedule",
+      "description": "Rebaseline 2 downstream activities and issue the 5-day completion forecast to planning and commissioning.",
+      "priority": "high",
+      "related_event": "Chiller CH-02 delayed"
+    },
+    {
+      "title": "Notify impacted teams",
+      "description": "Issue schedule revisions to owners of: Data Hall A, Electrical Room Fitout. Complete notification before the earliest forecast start date.",
+      "priority": "medium",
+      "related_event": "UPS-01 delivery scheduled"
+    },
+    {
+      "title": "Resequence critical-path work",
+      "description": "The current forecast shows 5 days of critical-path slippage. Parallel testing preparation and commissioning readiness could recover approximately 2 days; validate this scenario with the project scheduler.",
+      "priority": "high",
+      "related_event": "Chiller CH-02 delayed"
+    }
+  ],
+  "compliance_findings": [],
+  "verification": {
+    "source": "20-line synthetic RFI log",
+    "elapsed_seconds": 127.03,
+    "raw_orphan_nodes": 3
+  }
+}

@@ -25,6 +25,7 @@ class RelationshipExtractor:
         self,
         document: str,
         entity_lookup: dict[str, str],
+        entity_type_lookup: dict[str, str] | None = None,
     ) -> list[Relationship]:
         """
         Extract relationships from the supplied document.
@@ -43,7 +44,8 @@ class RelationshipExtractor:
         """
 
         prompt = ExtractionPrompts.relationship_extraction(
-            document
+            document,
+            list(entity_lookup),
         )
 
         response = self.client.generate(prompt)
@@ -51,22 +53,64 @@ class RelationshipExtractor:
         parsed = RelationshipParser.parse(response)
 
         relationships: list[Relationship] = []
+        entity_type_lookup = entity_type_lookup or {}
+
+        # Separate LLM calls can vary capitalization or surrounding
+        # whitespace for the same entity name. Resolve those harmless
+        # differences instead of silently dropping the relationship.
+        normalized_entity_lookup = {
+            name.strip().casefold(): entity_id
+            for name, entity_id in entity_lookup.items()
+        }
 
         for item in parsed.relationships:
 
-            source_id = entity_lookup.get(item.source)
+            source_id = normalized_entity_lookup.get(
+                item.source.strip().casefold()
+            )
 
-            target_id = entity_lookup.get(item.target)
+            target_id = normalized_entity_lookup.get(
+                item.target.strip().casefold()
+            )
 
             if source_id is None or target_id is None:
                 continue
 
+            relationship_type = RelationshipType(
+                item.relationship_type
+            )
+
+            if (
+                relationship_type == RelationshipType.SUPPLIES
+                and entity_type_lookup
+            ):
+                source_type = entity_type_lookup.get(source_id)
+                supplier_ids = [
+                    entity_id
+                    for entity_id, entity_type in entity_type_lookup.items()
+                    if entity_type in {"vendor", "contractor"}
+                ]
+
+                # LLMs occasionally attach "supplies" to a delivery
+                # milestone. When the document has one unambiguous supplier,
+                # repair the subject while preserving the supplied target.
+                if source_type not in {"vendor", "contractor"}:
+                    if len(supplier_ids) == 1:
+                        source_id = supplier_ids[0]
+                    else:
+                        continue
+
+            # Reverse dependency edges so impact flows correctly
+            if relationship_type == RelationshipType.DEPENDS_ON:
+                source_id, target_id = (
+                    target_id,
+                    source_id,
+                )
+
             relationships.append(
                 Relationship(
                     source_entity_id=source_id,
-                    relationship_type=RelationshipType(
-                        item.relationship_type
-                    ),
+                    relationship_type=relationship_type,
                     target_entity_id=target_id,
                 )
             )

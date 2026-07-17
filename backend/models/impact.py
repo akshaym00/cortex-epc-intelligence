@@ -34,3 +34,10 @@ class Impact(CortexBaseModel):
 
     # Optional confidence score
     confidence: float = 1.0
+
+    delay_days: int = 0
+    baseline_start: str | None = None
+    baseline_finish: str | None = None
+    forecast_start: str | None = None
+    forecast_finish: str | None = None
+    critical_path: bool = False

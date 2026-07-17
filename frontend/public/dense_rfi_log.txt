@@ -1,0 +1,20 @@
+RFI-001: Vendor Alpha confirms UPS-01 delivery on 15 July. Electrical Room Fitout depends on UPS-01 delivery.
+RFI-002: Vendor Beta reports Chiller CH-02 is delayed by 5 days. Cooling Loop Testing depends on CH-02 delivery.
+RFI-003: Contractor Delta requests approval for containment routing in Data Hall A.
+RFI-004: Fire Suppression Testing requires FM-200 cylinders from Vendor Gamma.
+RFI-005: Generator G-12 factory acceptance testing is complete. Site delivery remains scheduled for 18 July.
+RFI-006: Electrical Installation must finish before Integrated Systems Testing begins.
+RFI-007: Commissioning depends on Electrical Testing and Cooling Loop Testing.
+RFI-008: Vendor Alpha supplies UPS-01 and UPS-02 for Data Hall A.
+RFI-009: Contractor Omega owns the raised-floor installation package.
+RFI-010: Raised Floor Installation is delayed by 2 days due to access restrictions.
+RFI-011: Network Cabling requires containment completion in Data Hall A.
+RFI-012: Security System Testing depends on network cabling and access-control panel delivery.
+RFI-013: Vendor Sigma supplies the access-control panels.
+RFI-014: BMS Integration references the approved controls interface document.
+RFI-015: Cooling Commissioning requires Chiller CH-02 and primary pump P-04.
+RFI-016: Vendor Beta supplies primary pump P-04.
+RFI-017: Integrated Systems Testing requires utility power availability.
+RFI-018: Utility Power Energization is approved by the electrical inspector.
+RFI-019: Data Hall A handover depends on Integrated Systems Testing.
+RFI-020: Project completion depends on Data Hall A handover and final compliance approval.
