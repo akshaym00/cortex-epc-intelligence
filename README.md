@@ -78,6 +78,12 @@ Executive Dashboard
 
 ---
 
+## Architecture Diagram
+
+A complete implementation diagram is available in `docs/ARCHITECTURE_DIAGRAM.md`.
+
+---
+
 ## Repository Structure
 
 ```text
