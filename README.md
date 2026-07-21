@@ -1,76 +1,190 @@
-# CORTEX
-### AI-Powered EPC Project Intelligence Platform for Data Centre Delivery
+# Project Cortex
 
-> Transforming fragmented EPC documents into a living project intelligence model using Knowledge Graphs, RAG, and Agentic AI.
+> **AI-Powered EPC Project Intelligence Platform for Data Centre Delivery**
 
----
-
-## Overview
-
-CORTEX is an AI-powered project intelligence platform built for Data Centre EPC projects. It continuously ingests project documents—including specifications, vendor submittals, RFIs, schedules, inspection records, and technical correspondence—and transforms them into a **living knowledge graph** that enables real-time project intelligence.
-
-Instead of acting as a document chatbot, CORTEX reasons over project dependencies to identify schedule risks, compliance issues, downstream impacts, and executive actions before they become costly project delays.
-
-Developed for **ET AI Hackathon 2026 – Problem Statement 4: AI Intelligence Platform for Data Centre EPC Project Delivery.**
+Transforming fragmented EPC project documents into a **Living Project Model** using **OpenAI GPT-5**, Knowledge Graphs, Retrieval-Augmented Generation (RAG), and deterministic reasoning.
 
 ---
 
-## Key Features
+# Overview
 
-- Document Intelligence Pipeline
-  - PDF and text document ingestion
-  - Entity, relationship, and event extraction
-  - Structured project knowledge generation
+Project Cortex is an AI-powered project intelligence platform built for Engineering, Procurement and Construction (EPC) projects in the data centre industry.
 
-- Living Project Model
-  - Dynamic project state management
-  - Dependency graph construction
-  - Continuous project intelligence updates
+Large EPC projects generate thousands of documents including:
 
-- Executive Intelligence
-  - Critical path analysis
-  - Schedule risk prediction
-  - Impact propagation
-  - Project health assessment
+- Vendor Notifications
+- Engineering Specifications
+- Vendor Submittals
+- RFIs
+- Inspection Reports
+- Technical Correspondence
+- Schedules
 
-- AI Reasoning
-  - Specification compliance checking
-  - Dependency reasoning
-  - Recommendation engine
-  - Explainable executive decisions
+Today these documents exist in silos, forcing project managers to manually discover dependencies, assess risks and understand downstream impacts.
 
-- Interactive Dashboard
-  - Executive Command Center
-  - Project Risk Dashboard
-  - Critical Path visualization
-  - Knowledge Graph Explorer
-  - Action Register
+Project Cortex converts these unstructured documents into structured project intelligence that executives can immediately act upon.
+
+Instead of acting as another document chatbot, Project Cortex builds a **Living Project Model** capable of reasoning across project entities, dependencies and events to support executive decision-making.
 
 ---
 
-## System Architecture
+# How GPT-5 is Used
 
-```text
+OpenAI GPT-5 is used for **structured information extraction**, not decision making.
+
+After a project document is uploaded, GPT-5 extracts:
+
+- Project entities
+- Relationships
+- Project events
+- Engineering attributes
+- Metadata
+- Context required for reasoning
+
+Example:
+
+Vendor Notification
+
+↓
+
+GPT-5 extracts
+
+- Vendor
+- Equipment
+- Delay Event
+- Delivery Date
+- Affected Activity
+- Dependencies
+
+↓
+
+Project Cortex constructs the Living Project Model.
+
+From this point onward, **all project reasoning is deterministic.**
+
+The platform performs:
+
+- Dependency reasoning
+- Schedule impact analysis
+- Critical path assessment
+- Specification compliance
+- Executive recommendations
+
+without relying on the language model.
+
+This architecture makes every recommendation explainable, repeatable and traceable.
+
+---
+
+# Why This Architecture
+
+Many AI assistants simply summarize documents.
+
+Project Cortex instead separates responsibilities.
+
+### GPT-5
+
+Responsible for:
+
+- Understanding natural language
+- Extracting structured information
+- Interpreting engineering documents
+
+### Project Cortex Reasoning Engine
+
+Responsible for:
+
+- Dependency propagation
+- Impact analysis
+- Critical path reasoning
+- Compliance evaluation
+- Recommendation generation
+
+This hybrid architecture combines the flexibility of LLMs with the reliability of deterministic engineering logic.
+
+---
+
+# Key Features
+
+## Document Intelligence Pipeline
+
+- PDF and text ingestion
+- OpenAI GPT-5 extraction
+- Entity extraction
+- Relationship extraction
+- Event extraction
+- Structured project representation
+
+---
+
+## Living Project Model
+
+- Dynamic project state
+- Dependency graph
+- Knowledge Graph
+- Event tracking
+- Continuous project updates
+
+---
+
+## Executive Intelligence
+
+- Project health monitoring
+- Critical path analysis
+- Schedule impact prediction
+- Executive decision support
+- Action prioritization
+
+---
+
+## AI Reasoning
+
+- Dependency reasoning
+- Specification compliance
+- Impact propagation
+- Recommendation engine
+- Explainable decisions
+
+---
+
+## Interactive Dashboard
+
+- Executive Command Center
+- Executive Project Signal
+- Decision Pack
+- Dependency Network
+- Project Events
+- Impact Analysis
+- Action Register
+- Knowledge Graph Explorer
+
+---
+
+# Architecture
+
+```
 Project Documents
         │
         ▼
-Document Intelligence Pipeline
+OpenAI GPT-5
+Structured Information Extraction
         │
         ▼
-Entity • Relationship • Event Extraction
+Entities • Relationships • Events
         │
         ▼
-Living Project Knowledge Graph
+Living Project Model
         │
         ▼
-Reasoning Engine
+Knowledge Graph
         │
         ▼
-Impact Analysis
-Critical Path
-Schedule Risk
-Compliance
-Recommendations
+Deterministic Reasoning Engine
+        │
+ ┌──────┼──────────┬──────────────┐
+ ▼      ▼          ▼              ▼
+Impact  Critical   Compliance   Recommendations
+Analysis Path
         │
         ▼
 Executive Dashboard
@@ -78,90 +192,79 @@ Executive Dashboard
 
 ---
 
-## Architecture Diagram
+# Technology Stack
 
-A complete implementation diagram is available in `docs/ARCHITECTURE_DIAGRAM.md`.
+## AI
 
----
+- OpenAI GPT-5 API
+- Retrieval-Augmented Generation (RAG)
+- Knowledge Graph
+- Agentic AI
+- Deterministic Reasoning
 
-## Repository Structure
-
-```text
-backend/        FastAPI backend and AI pipeline
-frontend/       React + Vite dashboard
-docs/           Architecture and documentation
-demo/           Demo scripts and sample scenarios
-tests/          Unit and integration tests
-```
-
----
-
-## Technology Stack
-
-### Backend
+## Backend
 
 - Python
 - FastAPI
-- OpenAI API
 - Pydantic
 
-### AI
-
-- GPT-5
-- RAG
-- Knowledge Graph
-- Agentic AI
-- Dependency Reasoning
-
-### Frontend
+## Frontend
 
 - React
 - Vite
 
-### Testing
+## Testing
 
 - Pytest
 
 ---
 
-## Installation
+# Repository Structure
 
-Clone the repository:
+```
+backend/
+frontend/
+docs/
+demo/
+tests/
+```
+
+---
+
+# Installation
+
+Clone the repository
 
 ```bash
 git clone https://github.com/akshaym00/cortex-epc-intelligence.git
 cd cortex-epc-intelligence
 ```
 
-Create a virtual environment:
+Create a virtual environment
 
 ```bash
 python -m venv .venv
 ```
 
-Activate the environment (Windows):
+Windows
 
-```powershell
+```bash
 .\.venv\Scripts\Activate.ps1
 ```
 
-Install dependencies:
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## Running the Backend
+Run backend
 
 ```bash
 uvicorn backend.api.app:app --reload
 ```
 
----
-
-## Running Tests
+Run tests
 
 ```bash
 pytest
@@ -169,45 +272,43 @@ pytest
 
 ---
 
-## Demo
+# Demo Scenario
 
-Sample project documents are available under:
+The included demonstration showcases a real-world vendor delay scenario.
 
-```text
-demo/sample_documents/
-```
+Project Cortex automatically:
 
-Run demo scenarios from:
+1. Extracts structured information using GPT-5.
+2. Builds a Living Project Model.
+3. Performs dependency reasoning.
+4. Estimates downstream schedule impact.
+5. Generates executive recommendations.
+6. Produces explainable, citation-backed outputs.
 
-```text
-demo/
-```
+The platform also supports deterministic specification compliance by comparing engineering specifications against vendor submittals.
 
 ---
 
-## Project Highlights
+# Project Highlights
 
-- Living Project Intelligence Model
-- Knowledge Graph–based reasoning
-- Explainable AI recommendations
+- OpenAI GPT-5 powered document intelligence
+- Living Project Model
+- Knowledge Graph reasoning
+- Explainable AI
 - Deterministic dependency analysis
 - Executive decision support
 - Critical path forecasting
-- Specification compliance intelligence
+- Specification compliance
+- Citation-backed recommendations
 
 ---
 
-## Future Roadmap
+# Future Roadmap
 
 - Multi-project portfolio intelligence
-- Primavera & MS Project integration
+- Primavera integration
+- Microsoft Project integration
 - BIM integration
-- Real-time procurement monitoring
 - Multi-agent orchestration
 - Enterprise deployment
-
----
-
-## License
-
-This project was developed as part of **ET AI Hackathon 2026**.
+- Real-time procurement monitoring

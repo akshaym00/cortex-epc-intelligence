@@ -18,7 +18,10 @@ export function AppProvider({ children }) {
   const [activeSection, setActiveSection] = useState('command-center');
 
   const updateProjectData = (newData) => {
-    setProjectData((prev) => ({ ...prev, ...newData }));
+    setProjectData((prev) => ({
+      ...prev,
+      ...(newData || {}),
+    }));
   };
 
   const value = {

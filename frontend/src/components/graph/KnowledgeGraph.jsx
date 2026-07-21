@@ -99,16 +99,12 @@ function KnowledgeGraph({ id, entities = [], relationships = [], impacts = [], s
   const [highlightedEntityId, setHighlightedEntityId] = useState(null);
   const graphCanvasRef = useRef(null);
 
-  if (entities.length === 0 && relationships.length === 0) {
-    return (
-      <section id={id} className="card knowledge-graph-card">
-        <h3>Knowledge Graph</h3>
-        <p>No graph available. Analyze a document to build one.</p>
-      </section>
-    );
-  }
+  const hasData = entities.length > 0 || relationships.length > 0;
 
-  const { columns, positions } = buildLayout(entities, relationships);
+  const { columns, positions } = hasData
+    ? buildLayout(entities, relationships)
+    : { columns: [], positions: new Map() };
+
   const maxRows = Math.max(1, ...columns.map((column) => column?.length || 0));
   const width = Math.max(
     600,
@@ -149,6 +145,15 @@ function KnowledgeGraph({ id, entities = [], relationships = [], impacts = [], s
 
     return () => clearTimeout(timer);
   }, [activeEntityId]);
+
+  if (!hasData) {
+    return (
+      <section id={id} className="card knowledge-graph-card">
+        <h3>Knowledge Graph</h3>
+        <p>No graph available. Analyze a document to build one.</p>
+      </section>
+    );
+  }
 
   return (
     <section id={id} className="card knowledge-graph-card">
